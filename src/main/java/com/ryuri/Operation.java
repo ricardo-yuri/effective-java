@@ -3,7 +3,7 @@ package com.ryuri;
 import java.util.function.IntBinaryOperator;
 
 public enum Operation {
-    ADD((x, y) -> x + y),
+    ADD(AddOperation::compute),
     SUBSTRACT ((x, y) -> x - y),
     MULTIPLY ((x , y) -> x * y),
     DIVIDE ((x, y) -> x / y);
